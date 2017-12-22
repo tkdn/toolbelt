@@ -1,0 +1,19 @@
+ul,
+li {
+  overflow: hidden;
+  list-style-type: none;
+  padding-left: 0;
+}
+li {
+  border-bottom: 1px dotted #aaa;
+  em {
+    float: right;
+    font-weight: bold;
+    &.ok {
+      color: green;
+    }
+    &.ng {
+      color: red;
+    }
+  }
+}

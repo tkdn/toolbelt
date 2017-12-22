@@ -1,0 +1,13 @@
+@import "./component";
+
+body {
+  box-sizing: border-box;
+  border-radius: 10px;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: #eee;
+  footer {
+    text-align: right;
+  }  
+}

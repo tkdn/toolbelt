@@ -1,0 +1,16 @@
+{
+  "name": "toolbelt-sample",
+  "version": "0.0.0",
+  "license": "MIT",
+  "devDependenceis": {},
+  "scripts": {
+    "dev": "toolbelt-cli dev",
+    "build": "toolbelt-cli build"
+  },
+  "devDependencies": {
+    "@tkdn/babel-preset-toolbelt": "^0.0.1-0",
+    "@tkdn/toolbelt-babel": "^0.0.1-0",
+    "@tkdn/toolbelt-cli": "^0.0.1-0",
+    "@tkdn/toolbelt-sass": "^0.0.1-0"
+  }
+}

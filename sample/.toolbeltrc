@@ -1,0 +1,21 @@
+{
+  "dev": {
+    "targets": {
+      "browsers": ["last 1 Chrome versions"]
+    },
+    "browserSync": "./config/bsconfig.js",
+    "webpack": [
+      "./config/toolbelt.babel.js",
+      "./config/toolbelt.sass.js"
+    ]
+  },
+  "build": {
+    "targets": {
+      "browsers": ["Android >= 4", "safari >= 9"]
+    },
+    "webpack": [
+      "./config/toolbelt.babel.js",
+      "./config/toolbelt.sass.js"
+    ]
+  }
+}
