@@ -1,12 +1,12 @@
 {
   "name": "@tkdn/toolbelt-babel",
-  "version": "0.0.0-beta",
+  "version": "0.0.1-0",
   "main": "index.js",
   "repository": "https://github.com/tkdn/toolbelt/blob/master/packages/toolbelt-sass",
   "author": "tkdn<tkdnation@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@tkdn/babel-preset-toolbelt": "^0.0.0-beta",
+    "@tkdn/babel-preset-toolbelt": "^0.0.1-0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-polyfill": "^6.26.0",

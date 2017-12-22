@@ -1,6 +1,6 @@
 {
   "name": "@tkdn/babel-preset-toolbelt",
-  "version": "0.0.0-beta",
+  "version": "0.0.1-0",
   "main": "index.js",
   "repository": "https://github.com/tkdn/toolbelt/blob/master/packages/babel-preset-toolbelt",
   "author": "tkdn<tkdnation@gmail.com>",
