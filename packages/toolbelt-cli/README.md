@@ -31,12 +31,12 @@ If you want, cli can accept other location / other filename from argument.
 ```
 toolbelt-cli dev
 ```
-For development, `dev` command is set environment variable `process.env.NODE_ENV === 'development'`.
+For development, `dev` command is set environment variable `process.env.NODE_ENV === 'development'`.
 
 ```
 toolbelt-cli build
 ```
-For production, `build` command is set environment variable `process.env.NODE_ENV === 'production'`.
+For production, `build` command is set environment variable `process.env.NODE_ENV === 'production'`.
 
 ## `.toolbeltrc`
 ```
@@ -67,14 +67,14 @@ Top level fields (`dev`, `build`) means your command.
 Whole sub fields are provided as a optional object for webpack.
 
 ### `targets` field
-This field means `browserslist` value for autoprefixer and @babel/preset-env.
+This field means `browserslist` value for autoprefixer and @babel/preset-env.
 
 ### `browserSync` field
 This field means browserSync config file location.
 
 ### `webpack` field
 This field means config file(s) location. It must be Array.  
-Export type of config file(s) in array must be `object` or `funtion` with `options` argument.
+Export type of config file(s) in array must be `object` or `funtion` with `options` argument.
 
 #### Export type `object` / usual webpack config
 ```js
