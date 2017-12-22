@@ -1,6 +1,6 @@
 {
   "name": "@tkdn/toolbelt-cli",
-  "version": "0.0.0",
+  "version": "0.0.0-beta",
   "repository": "https://github.com/tkdn/toolbelt/blob/master/packages/toolbelt-cli",
   "author": "tkdn<tkdnation@gmail.com>",
   "license": "MIT",
