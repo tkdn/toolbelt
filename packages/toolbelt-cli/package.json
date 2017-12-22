@@ -1,0 +1,22 @@
+{
+  "name": "@tkdn/toolbelt-cli",
+  "version": "0.0.0",
+  "repository": "https://github.com/tkdn/toolbelt/blob/master/packages/toolbelt-cli",
+  "author": "tkdn<tkdnation@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "toolbelt-cli": "bin/toolbelt-cli"
+  },
+  "dependencies": {
+    "browser-sync": "^2.20.0",
+    "chalk": "^2.3.0",
+    "deepmerge": "^2.0.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-middleware": "^2.0.2",
+    "webpack-merge": "^4.1.1",
+    "yargs": "^10.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

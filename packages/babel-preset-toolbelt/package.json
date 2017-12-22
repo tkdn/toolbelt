@@ -1,0 +1,17 @@
+{
+  "name": "@tkdn/babel-preset-toolbelt",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tkdn/toolbelt/blob/master/packages/babel-preset-toolbelt",
+  "author": "tkdn<tkdnation@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

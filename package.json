@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "name": "toolbelt",
+  "version": "0.0.0",
+  "engines": {
+    "node": ">=6"
+  },
+  "repository": "https://github.com/tkdn/toolbelt/",
+  "author": "tkdn<tkdnation@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "lerna clean --yes",
+    "publish": "lerna publish",
+    "postinstall": "lerna clean --yes && lerna run prepublish"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^2.5.1"
+  }
+}
