@@ -76,7 +76,10 @@ for (const key in options) {
 const mergedConfig = configrc.webpack.map((file, i) => {
   try {
     const config = require(pathFromCwdTo(file))
-    return config(options)
+    const isFunction = typeof config === 'function'
+    return isFunction
+      ? config(options)
+      : config
   } catch (e) {
     console.error(error(e))
     process.exit(1)
@@ -105,10 +108,7 @@ if (cmd === 'dev') {
     })
   } else {
     compiler.plugin('done', stats =>{
-      if (stats.hasErrors() || stats.hasWarnings()) {
-        console.log(stats)
-        process.exit(1)
-      }
+      if (stats.hasErrors() || stats.hasWarnings()) {}
       browserSync.reload()
     })
     const bsconfigFile = pathFromCwdTo(configrc.browserSync)
