@@ -11,7 +11,7 @@
   "scripts": {
     "clean": "lerna clean --yes",
     "publish": "lerna publish",
-    "postinstall": "lerna clean --yes && lerna run prepublish"
+    "postinstall": "lerna clean --yes"
   },
   "workspaces": [
     "packages/*"
