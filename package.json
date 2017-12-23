@@ -14,7 +14,8 @@
     "postinstall": "lerna clean --yes"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "sample/*"
   ],
   "devDependencies": {
     "lerna": "^2.5.1"
