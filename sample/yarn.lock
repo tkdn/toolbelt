@@ -2,20 +2,20 @@
 # yarn lockfile v1
 
 
-"@tkdn/babel-preset-toolbelt@^0.0.1-0":
-  version "0.0.1-0"
-  resolved "https://registry.yarnpkg.com/@tkdn/babel-preset-toolbelt/-/babel-preset-toolbelt-0.0.1-0.tgz#e87688fff8c19203f059b0b6ea793787a628cbd4"
+"@tkdn/babel-preset-toolbelt@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@tkdn/babel-preset-toolbelt/-/babel-preset-toolbelt-0.0.2.tgz#544efa0bd93fe15c7da50d8e818c83031c6cfc92"
   dependencies:
     babel-core "^6.26.0"
     babel-plugin-transform-class-properties "^6.24.1"
     babel-plugin-transform-object-rest-spread "^6.26.0"
     babel-preset-env "^1.6.1"
 
-"@tkdn/toolbelt-babel@^0.0.1-0":
-  version "0.0.1-0"
-  resolved "https://registry.yarnpkg.com/@tkdn/toolbelt-babel/-/toolbelt-babel-0.0.1-0.tgz#946b30bb02f38ccf0aa2d58e1ddf155c42efe6c7"
+"@tkdn/toolbelt-babel@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@tkdn/toolbelt-babel/-/toolbelt-babel-0.0.2.tgz#5c96f6f1427b5855efe2de1062b6d5c2ea55eee9"
   dependencies:
-    "@tkdn/babel-preset-toolbelt" "^0.0.1-0"
+    "@tkdn/babel-preset-toolbelt" "^0.0.2"
     babel-core "^6.26.0"
     babel-loader "^7.1.2"
     babel-polyfill "^6.26.0"
@@ -23,9 +23,9 @@
     webpack "^3.10.0"
     webpack-merge "^4.1.1"
 
-"@tkdn/toolbelt-cli@^0.0.1-0":
-  version "0.0.1-0"
-  resolved "https://registry.yarnpkg.com/@tkdn/toolbelt-cli/-/toolbelt-cli-0.0.1-0.tgz#6bcbf23c88ed44851b558368884dc9691b4349ba"
+"@tkdn/toolbelt-cli@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@tkdn/toolbelt-cli/-/toolbelt-cli-0.0.2.tgz#958dbe38c8e670019d06a6d065c0898d87d2c752"
   dependencies:
     browser-sync "^2.20.0"
     chalk "^2.3.0"
@@ -35,9 +35,9 @@
     webpack-merge "^4.1.1"
     yargs "^10.0.3"
 
-"@tkdn/toolbelt-sass@^0.0.1-0":
-  version "0.0.1-0"
-  resolved "https://registry.yarnpkg.com/@tkdn/toolbelt-sass/-/toolbelt-sass-0.0.1-0.tgz#d1dd0d2ffa19e86cfd20b6ab559883187138a523"
+"@tkdn/toolbelt-sass@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@tkdn/toolbelt-sass/-/toolbelt-sass-0.0.2.tgz#5fc2b6e26ae49b80c3b35556c8dbe0e64cfa6086"
   dependencies:
     autoprefixer "^7.2.3"
     css-loader "^0.28.7"
