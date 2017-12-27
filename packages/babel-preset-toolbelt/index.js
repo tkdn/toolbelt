@@ -1,5 +1,18 @@
 module.exports = (ctx, options) => {
-  const { debug } = options
+  const { env, debug, coverageExludes } = options
+  const testPlugins = []
+  // test env plugins
+  if (env === 'test') {
+    testPlugins.push(
+      [
+        require('babel-plugin-istanbul').default,
+        {
+          exclude: coverageExludes || ['**/*.test.js']
+        }
+      ],
+      require('babel-plugin-espower')
+    )
+  }
   return {
     presets: [
       [
@@ -17,7 +30,8 @@ module.exports = (ctx, options) => {
     ],
     plugins: [
       [require('babel-plugin-transform-class-properties'), { loose: true }],
-      [require('babel-plugin-transform-object-rest-spread'), { useBuiltIns: true }]
+      [require('babel-plugin-transform-object-rest-spread'), { useBuiltIns: true }],
+      ...testPlugins
     ]
   }
 }
