@@ -56,3 +56,5 @@ docs
 # VScode settings
 .vscode
 jsconfig.json
+
+.eslintcache
