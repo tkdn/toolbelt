@@ -5,6 +5,9 @@
   "repository": "https://github.com/tkdn/toolbelt/blob/master/packages/toolbelt-karma",
   "author": "tkdn<tkdnation@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test:sample": "node sample/karma.js"
+  },
   "dependencies": {
     "karma": "^2.0.0",
     "karma-chrome-launcher": "^2.2.0",
