@@ -11,7 +11,7 @@
   "scripts": {
     "precommit": "lint-staged",
     "clean": "lerna clean --yes",
-    "lint": "eslint 'packages/**/*.js'",
+    "lint": "eslint --cache 'packages/**/*.js'",
     "publish": "lerna publish",
     "postcommit": "git reset",
     "postinstall": "lerna clean --yes"
