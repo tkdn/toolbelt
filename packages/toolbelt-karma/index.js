@@ -1,24 +1,19 @@
 const path = require('path')
-const { Server } = require('karma')
 
-const server = new Server({})
-server.start()
-
-module.exports = (config, options, webpackConfig) => {
-  const { specFiles, fixtureDoc } = config
-  const { testmode } = options
+module.exports = (config, webpackConfig) => {
+  const { specFiles, fixtureDocs, mode } = config
   const karmaConfig = {
     files: [
       {
         pattern: specFiles,
         watched: false
       },
-      fixtureDoc
+      fixtureDocs
     ],
     exclude: [],
     preprocessors: {
       [specFiles]: ['webpack'],
-      [fixtureDoc]: ['html2js']
+      [fixtureDocs]: ['html2js']
     },
     webpack: webpackConfig,
     webpackMiddleware: {
@@ -43,18 +38,21 @@ module.exports = (config, options, webpackConfig) => {
         flags: ['--no-sandbox', '--ignore-certificate-errors', '--remote-debugging-port=9222']
       }
     },
-    captureTimeout: 60000
+    captureTimeout: 60000,
+    singleRun: true
   }
-  if (testmode === 'watch') {
+  // If mode value is `watch`,
+  if (mode === 'watch') {
     karmaConfig.coverageReporter = {
       type: 'text-summary'
     }
-    karmaConfig.singleRun = true
+    karmaConfig.singleRun = false
   }
-  if (testmode === 'debug') {
+  if (mode === 'debug') {
     karmaConfig.browsers = ['CustomChrome']
+    karmaConfig.singleRun = false
   } else {
-    config.browsers = ['CustomHeadless']
+    karmaConfig.browsers = ['CustomHeadless']
   }
   return karmaConfig
 }
