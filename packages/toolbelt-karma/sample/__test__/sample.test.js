@@ -1,4 +1,4 @@
-import { add, mathPow, promise } from '../../src/module'
+import { add, mathPow, promise } from '../src/module'
 
 describe('test suite.', () => {
   before(() => {
